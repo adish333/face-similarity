@@ -1,11 +1,9 @@
 # face-similarity
 
 ## Network Architecture:
-**Model: Siamese Facenet Network with inception-resnetV1 backbone**
+**Model: Siamese Facenet Network with inception-resnetV1 backbone and Pre-trained MLCNN for face detection**
 
-I took pretrained facenet model which is trained on 1M celebrity images. This network takes face image as input and outputs an embedding vector of 128 dimension. 
-
-I tried finetuning other backbones(resnet50, densenet201) on the provided data itself but it didn't perform that well.
+I took pretrained facenet model as base model which is trained on 1M celebrity images. This network takes face image as input and outputs an embedding vector of 128 dimension. Then, I created a Siamese network which takes an image pair and tries to predict the distance between them.
 
 **Loss: Contrastive Loss**
 
