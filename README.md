@@ -24,3 +24,25 @@ In my second approach, I cropped the faces from the images, extracted the face e
 2.	Face Embedding preparation
 3.	Fine-Tuning Facenet
 4.	Inference
+
+## Inference
+**Weights:** https://drive.google.com/drive/folders/1UEgYyQAvcTKjEnxuuUPH4XA-y9BaGdNz?usp=sharing
+
+**Sample Input:** 
+
+python infer.py -i1 data/image1.jpg -i2 data/image2.jpg
+
+**Sample Output:**
+
+all models successfully loaded!
+
+The similarity between the images >  0.9996837722428609
+
+Same Person!
+
+**Version Requirements:**
+
+Keras - 2.3.1 
+
+Tensorflow - 1.15.0
+
